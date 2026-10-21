@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opendeveloper"
+version = "0.1.0"
+description = "Local-first website analysis, approved planning and original frontend generation"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+opendeveloper = "opendeveloper.cli:main"
+
+[tool.setuptools.package-data]
+opendeveloper = ["web/*"]
