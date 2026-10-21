@@ -119,18 +119,18 @@ python -m compileall -q opendeveloper
 
 테스트는 네트워크·모델 fixture로 승인 경계, 계획 변경, ZIP, SSRF, 경로 검증, CSRF·Host·Origin, OAuth state·PKCE 및 HTTP 전체 흐름을 확인합니다. 실제 API 키 없이 실행할 수 있습니다. Windows/Linux Python 3.11·3.13 CI를 포함합니다. 실제 공급자 API·OAuth 및 Windows 설치는 별도 실기기 검증이 필요합니다.
 
-## GitHub에 게시
+## 소스 다운로드
 
-이 소스는 공개 MIT 프로젝트로 게시할 수 있도록 준비되어 있습니다. GitHub CLI가 설치·인증된 환경에서는 소스 폴더에서 다음으로 새 저장소를 만들고 첫 커밋을 올릴 수 있습니다.
+공식 저장소: https://github.com/mkseo1012-pixel/opendeveloper
+
+Git이 설치되어 있다면 CMD 또는 PowerShell에서:
 
 ```sh
-git init -b main
-git add .
-git commit -m "Initial OpenDeveloper release"
-gh repo create opendeveloper --public --source=. --remote=origin --push
+git clone https://github.com/mkseo1012-pixel/opendeveloper.git
+cd opendeveloper
 ```
 
-저장소가 이미 있다면 `gh repo create` 대신 해당 remote를 연결하세요. PyPI에는 아직 게시되지 않았으며, 동명의 PyPI 패키지를 설치하는 방식으로 안내하지 않습니다.
+그다음 위의 운영체제별 설치 명령을 실행하세요. Git 없이 GitHub의 **Code → Download ZIP**으로 내려받아도 됩니다. PyPI에는 게시하지 않았습니다.
 
 ## 기여
 
